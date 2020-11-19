@@ -511,15 +511,22 @@ function topFunction() {
 }
 </script>
 <!-- live chat code start-->
-<script>
-  function initFreshChat() {
-    window.fcWidget.init({
-      token: "98b8c9bb-8bf2-4803-bbbf-753454170a38",
-      host: "https://wchat.in.freshchat.com"
-    });
-  }
-  function initialize(i,t){var e;i.getElementById(t)?initFreshChat():((e=i.createElement("script")).id=t,e.async=!0,e.src="https://wchat.in.freshchat.com/js/widget.js",e.onload=initFreshChat,i.head.appendChild(e))}function initiateCall(){initialize(document,"freshchat-js-sdk")}window.addEventListener?window.addEventListener("load",initiateCall,!1):window.attachEvent("load",initiateCall,!1);
+<!-- ClickDesk Live Chat Service for websites -->
+<script type='text/javascript'>
+var _glc =_glc || []; _glc.push('all_ag9zfmNsaWNrZGVza2NoYXRyEgsSBXVzZXJzGICAiIPi-uIJDA');
+if(document.location.hostname != 'localhost'){
+	var glcpath = (('https:' == document.location.protocol) ? 'https://my.clickdesk.com/clickdesk-ui/browser/' : 
+	'http://my.clickdesk.com/clickdesk-ui/browser/');
+	var glcp = (('https:' == document.location.protocol) ? 'https://' : 'http://');
+}else{
+	var glcpath = 'http://localhost:8888/clickdesk-ui/browser/';
+	var glcp = 'http://';
+}
+var glcspt = document.createElement('script'); glcspt.type = 'text/javascript'; 
+glcspt.async = true; glcspt.src = glcpath + 'livechat-cloud-new.js';
+var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(glcspt, s);
 </script>
+<!-- End of ClickDesk -->
 
 </body>
 </html>
